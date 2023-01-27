@@ -34,13 +34,13 @@ const New: NextPage = () => {
                            
                     </div>
                     <div className="delay hide flex flex-col w-1/2 items-center">
-                        <img width="70%" src="public/MoreAboutSection/self1.jpg"></img>
+                        <img width="70%" src="https://github.com/honghong1012/Portfolio/blob/main/public/MoreAboutSection/self1.JPG?raw=true"></img>
                         <p className="text-primary-300">Photo taken on Mount Rainier</p>
                     </div>
                 </div>
                 <div className="flex items-center justify-between gap-10 max-w-7xl px-20">
                     <div className="delay hide flex flex-col w-1/2 items-center">
-                        <img width="70%" src="public/MoreAboutSection/self2.jpg"></img>
+                        <img width="70%" src="https://github.com/honghong1012/Portfolio/blob/main/public/MoreAboutSection/self2.JPG?raw=true"></img>
                         <p className="text-primary-300">Baking egg yolk souffle...</p>
                     </div>
                     <div className="flex flex-col w-1/2 gap-8">
