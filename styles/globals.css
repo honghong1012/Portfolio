@@ -31,47 +31,104 @@
 }
 
 /* Nav Bar */
-nav {
+.navigation-bar {
   position: sticky;
   z-index: 2;
   top:0%;
   background-color: white;
 }
+
 .navbar-icon{
   font-size: 2rem;
   font-weight: bold;
   color: #4c4c4c;
 }
 
-/* Title Section */
-.title-name{
-    font-size: 10rem;
-    margin: 0 0 20px 0;
+/* Dropdown */
+.hamburger-menu {
+  position: relative;
+  display: none;
 }
 
-.aboutMe-title{
-  text-align: right;
+.hamburger {
+  cursor: pointer;
+  display: inline-block;
+  height: 35px;
+  width: 40px;
+}
+
+.bar1, .bar2, .bar3 {
+  background-color: grey;
+  height: 2px;
+  margin: 6px 0;
+  width: 40px;
+  border: 2px solid grey;
+  border-radius: 2px;
+}
+
+.dropdown-menu {
+  background-color: white;
+  border: transparent;
+  display: none;
+  position: fixed;
+  top: 65px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  /* border: 0.5px grey solid; */
+  padding: 10px 0;
+  box-shadow: 0px 1px 2px grey;
+  animation: dropdown-animation 0.5s ease-in-out;
+  /* This timing applies on the way IN */
+}
+
+.dropdown-menu.open {
+  display: flex;
+  /* gap: 10px; */
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes dropdown-animation {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* Title Section */
+.title-name{
+    font-size: 8rem;
+    margin: 0 0 20px 0;
+    line-height: 1;
+    display: flex;
+    gap: 20px;
 }
 
 .slogan-title{
   border-bottom: solid 3px;
   width: max-content;
+  font-size: 1.5rem;
 }
 
 .slogan-title-down{
   margin-top: -15px;
+  font-size: 1.5rem;
 }
 
-@media only screen and (max-width:960px) {
-    nav li {display:none; }
-    nav .hamburger{display: inline;}
+.contact-text{
+  font-size: 1.5rem;
+}
+
+.introduction{
+  font-size: 1.125rem;
+  margin: 16px 0;
 }
 
 /* About Section */
-.more-about{
-  padding: 5% 0;
-}
-
 
 .img-flex{
   height: 300px;
@@ -80,6 +137,54 @@ nav {
 .img-sizing{
   width: 100%;
   height: 100%;
+}
+
+.about-title{
+  text-align: right;
+  font-size: 5rem;
+  padding: 0 60px 4rem 0;
+}
+
+.about-image-text-container{
+  padding: 0 60px;
+  display: flex;
+}
+
+.about-text-container{
+  font-size: 1rem;
+}
+
+/* Project Section */
+.project-title{
+  font-size: 5rem;
+}
+
+.project-container{
+  margin: 3rem 0;
+}
+
+/* More about section */
+.more-about{
+  padding: 5% 0;
+}
+
+.more-about-container{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.more-about-image-text-container{
+  display: flex;
+}
+
+.more-about-text, .more-about-image{
+  width: 50%;
+}
+
+.more-about-title-icon{
+  width: 6%;
 }
 
 /*  animation use */
@@ -113,73 +218,119 @@ nav {
   transition-delay: 300ms;
 }
 
-/**************************
-/* HAMBURGER, MENU-BAR STYLING 
-**************************/
-.hamburger {
-    height: 3.5rem;
-    width: 3.5rem;
-    padding: 0;
+/* Mobile */
+@media screen and (max-width: 653px) {
+  .title-name{
+    font-size: 5rem;
+    flex-direction: column;
+    line-height: 1;
+  }
+  .slogan-title, .slogan-title-down{
+    font-size: 1.2rem;
+  }
+  .contact-text{
+    font-size: 1rem;
+  }
+  .introduction{
+    font-size: 0.9rem;
+    margin: 8px 0;
+  }
+  .about-image-text-container{
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .about-title{
+    font-size: 4rem;
+    padding: 0 40px 2rem 0;
+  }
+  .project-title{
+    font-size: 4rem;
+  }
+  .project-container{
+    margin: 1rem 0;
+  }
+  .more-about-image-text-container{
+    flex-direction: column;
+  }
+  .more-about-image-text-container.reverse{
+    flex-direction: column-reverse;
+  }
+  .more-about-text, .more-about-image{
+    width: 100%;
+  }
+  .menu{
     display: none;
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-    z-index: 2;
-    position: fixed;
-    top: 1rem;
-    right: 2.5rem;
   }
-  
-  .hamburger.is-active {
-    position: fixed;
-    top: 1rem;
-    right: 2.5rem;
-    background: rgb(31, 38, 49);
+  .hamburger-menu{
+    display: block;
   }
-  
-  .menu-bar {
-    position: relative;
+  .more-about-title-icon{
+    width: 15%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 654px) and (max-width: 1024px){
+  .title-name{
+    font-size: 6rem;
+    line-height: 1;
+  }
+  .contact-text{
+    font-size: 1.2rem;
+  }
+  .about-image-text-container{
+    flex-direction: column;
+    padding: 0 60px;
+  }
+  .about-image-container{
+    width: 50%;
+  }
+  .about-title{
+    /* font-size: 5rem; */
+    padding: 0 60px 3rem 0;
+  }
+  .more-about-image-text-container{
+    flex-direction: column;
+  }
+  .more-about-image-text-container.reverse{
+    flex-direction: column-reverse;
+  }
+  .more-about-text, .more-about-image{
     width: 100%;
   }
-  
-  .menu-bar,
-  .menu-bar::before,
-  .menu-bar::after {
-    height: 0.2rem;
-    border-radius: 0.5rem;
-    background: rgba(24, 185, 207, 0.9);
-    transition: all 0.5s ease-in-out;
+  .more-about-title-icon{
+    width: 8%;
   }
-  
-  .menu-bar::before {
-    position: absolute;
-    content: "";
-    top: -1.1rem;
-    right: 0;
-    width: 70%;
-    transition: all 0.5s ease-in-out;
+}
+
+/* x-large screen */
+@media screen and (min-width: 1550px) {
+  .title-name{
+    font-size: 10rem;
+    line-height: 1;
+    gap: 40px;
   }
-  
-  .menu-bar::after {
-    position: absolute;
-    content: "";
-    bottom: -1.1rem;
-    right: 0;
-    width: 70%;
-    transition: all 0.5s ease-in-out;
+  .slogan-title, .slogan-title-down, .contact-text{
+    font-size: 1.875rem;
   }
-  
-  .menu-bar.is-active {
-    background: transparent;
+  .about-image-text-container{
+    padding: 0;
   }
-  
-  .menu-bar.is-active::before {
-    width: 100%;
-    transform: rotate(45deg) translateX(1.5rem);
+  .about-text-container{
+    font-size: 1.125rem;
   }
-  
-  .menu-bar.is-active::after {
-    width: 100%;
-    transform: rotate(-45deg) translateX(1.5rem);
+  .about-title{
+    font-size: 6rem;
+    padding:0 0 5rem 0;
   }
+  .project-title{
+    font-size: 6rem;
+  }
+  .project-container{
+    margin: 5rem 0;
+  }
+  .more-about-container{
+    gap: 5rem;
+    margin: 10rem 0;
+  }
+}

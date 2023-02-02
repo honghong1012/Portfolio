@@ -12,10 +12,10 @@ function ThirdSection() {
             id="projects"
         >
             <div className="mx-auto w-11/12 max-w-7xl">
-                <p className="project-hide text-8xl font-bold text-primary-100">
+                <p className="project-hide project-title font-bold text-primary-100">
                     Projects
                 </p>
-                <div className="grid grid-cols-1 my-20 gap-x-30 gap-y-32 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+                <div className="grid grid-cols-1 project-container gap-x-30 gap-y-32 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2">
                     {category === "next" && (
                         <>
                             <ProjectItems

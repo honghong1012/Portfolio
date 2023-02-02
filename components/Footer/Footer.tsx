@@ -1,7 +1,3 @@
-import Image from "next/image";
-// Assets
-import Contact from "public/Footer/Contact.svg";
-
 function Footer() {
     return (
         <footer
