@@ -10,6 +10,10 @@
     }
 }
 
+a:hover{
+  color:#4c4c4c;
+}
+
 .calc-height {
     min-height: calc(100vh - 64px);
 }
