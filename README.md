@@ -63,7 +63,7 @@ Using NPM: Simply run the below commands.
 $ npm install
 
 # Start the development server
-$ npm start
+$ npm run dev
 ```
 
 **NOTE**:
