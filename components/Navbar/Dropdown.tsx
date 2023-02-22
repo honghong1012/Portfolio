@@ -9,7 +9,6 @@ const Dropdown = () => {
 
   return (
     <div className='hamburger-menu'>
-      {/* <button className="menu-toggle" onClick={toggleDropdown}>Menu</button> */}
       <div className="hamburger" onClick={toggleDropdown}>
         <div className={`bar1${isOpen ? ' open' : ''}`}></div>
         <div className={`bar2${isOpen ? ' open' : ''}`}></div>

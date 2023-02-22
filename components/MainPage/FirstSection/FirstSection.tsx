@@ -48,7 +48,6 @@ function FirstSection() {
                 </div>
             </main>
         </section>
-
     );
 }
 
