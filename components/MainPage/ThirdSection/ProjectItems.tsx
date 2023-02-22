@@ -25,7 +25,7 @@ function ProjectItems({
     resume
 }: ItemProps) {
     return (
-        <article className="flex cursor-default flex-col gap-6 bg-white px-14 transition-all  ">
+        <article className="project-item flex cursor-default flex-col gap-6 bg-white px-14 transition-all  ">
             <div className="project-hide img-flex flex justify-center hover:scale-110 md:hover:translate-x-4 md:hover:-translate-y-4 duration-300">
             <CustomizedImage imgId={imgId}/>
             </div>

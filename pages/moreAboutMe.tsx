@@ -5,7 +5,7 @@ const MoreAboutMe: NextPage = () => {
            <section id="more-about" className="hide flex ">
             <div className="mx-auto more-about-container">
                 <div className="ml-20 flex gap-4">
-                    <h1 className="bold text-6xl">Hey there</h1>
+                    <h1 className="more-about-title bold text-6xl">Hey there</h1>
                     <img className="more-about-title-icon" src="https://github.com/honghong1012/honghong1012/blob/main/images/wave.gif?raw=true"></img>
                 </div>
                 <div className="more-about-image-text-container items-center justify-between gap-10 max-w-7xl px-20">

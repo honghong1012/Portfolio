@@ -222,6 +222,68 @@ a:hover{
   transition-delay: 300ms;
 }
 
+/* Smaller */
+@media screen and (max-width: 450px) {
+  .title-name{
+    font-size: 5rem;
+    flex-direction: column;
+    line-height: 1;
+  }
+  .slogan-title, .slogan-title-down{
+    font-size: 1.2rem;
+  }
+  .contact-text{
+    font-size: 1rem;
+  }
+  .introduction{
+    font-size: 0.9rem;
+    margin: 8px 0;
+  }
+  .about-image-text-container{
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .about-title{
+    font-size: 4rem;
+    padding: 0 40px 2rem 0;
+  }
+  .project-title{
+    font-size: 4rem;
+  }
+  .project-container{
+    margin: 1rem 0;
+  }
+
+  .project-item{
+    padding: 0 20px
+  }
+  
+  .more-about-image-text-container{
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .more-about-image-text-container.reverse{
+    flex-direction: column-reverse;
+  }
+  .more-about-title{
+    font-size: 3rem;
+  }
+
+  .more-about-text, .more-about-image{
+    width: 100%;
+  }
+  .menu{
+    display: none;
+  }
+  .hamburger-menu{
+    display: block;
+  }
+  .more-about-title-icon{
+    width: 15%;
+  }
+}
+
+
 /* Mobile */
 @media screen and (max-width: 653px) {
   .title-name{

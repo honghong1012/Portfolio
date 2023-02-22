@@ -20,7 +20,7 @@ function ThirdSection() {
                         <>
                             <ProjectItems
                                 imgId="Portfolio"
-                                title="Portfolio(Unfinished)"
+                                title="Portfolio(Ongoing)"
                                 website="https://scarletthong.top"
                                 source="https://github.com/honghong1012/Portfolio"
                                 description={<>My self-coded technical website build with <b>TypeScript</b>, <b>Next.js</b> and <b>tailwindCSS</b>. 
