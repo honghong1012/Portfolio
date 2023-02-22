@@ -6,7 +6,7 @@ function Footer() {
             <div className="flex flex-col footer-container gap-3">
                 <div className="flex gap-1 text-primary-300 flex justify-center">
                     <a href="mailto:honghonghh1012@gmail.com" className="hover:text-primary-200">Email</a> / 
-                    <a href="https://www.linkedin.com/in/hong-hong-7b283321b/" target="_blank" className="hover:text-primary-200">LinkedIn</a> /
+                    <a href="https://www.linkedin.com/in/scarlett-h-7b283321b/" target="_blank" className="hover:text-primary-200">LinkedIn</a> /
                     <a href="https://github.com/honghong1012" target="_blank" className="hover:text-primary-200">GitHub</a> /
                     <a href="https://www.instagram.com/scarlett_hong1012/" target="_blank" className="hover:text-primary-200">Instagram</a>
                 </div>

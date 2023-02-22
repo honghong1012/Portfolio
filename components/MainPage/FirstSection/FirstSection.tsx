@@ -40,7 +40,7 @@ function FirstSection() {
                         </p>
                         <h2 className="hide contact-text text-primary-100">
                             <a href="mailto:honghonghh1012@gmail.com"><Image src={Gmail}/> Gmail</a> / {" "}
-                            <a href="https://www.linkedin.com/in/hong-hong-7b283321b/" target="_blank"><Image src={Linkedin}/> LinkedIn</a> / {" "}
+                            <a href="https://www.linkedin.com/in/scarlett-h-7b283321b/" target="_blank"><Image src={Linkedin}/> LinkedIn</a> / {" "}
                             <a href="https://github.com/honghong1012" target="_blank"><Image src={Github}/> GitHub</a> / {" "}
                             <a href="https://www.instagram.com/scarlett_hong1012/" target="_blank"><Image src={Instagram}/> Instagram </a>  
                         </h2>
