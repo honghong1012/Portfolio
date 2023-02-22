@@ -178,10 +178,10 @@ Once you finish your setup. You need to put your website online!
 I highly recommend to use [Vercel](https://vercel.com) because it is super easy.
 
 ## Technologies used 🛠️
-- [Bootstrap 5]() - Frontend component library
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Frontend component library
 - [Sass](https://sass-lang.com/documentation) - CSS extension language
-- [Next.js]() - 
-- [Tailwind CSS]() - 
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
 
 ## Authors
 
