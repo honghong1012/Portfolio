@@ -1,6 +1,6 @@
 // Image
 const Portfolio =  "ThirdSection/Portfolio.png"
-const AWS = "ThirdSection/aws.png"
+const AWS = "ThirdSection/AWS.png"
 const SmartHealth = "ThirdSection/SmartHealth.png"
 const Midea = "ThirdSection/Midea.png"
 const TickMaster = "ThirdSection/TickMaster.png"

@@ -21,7 +21,7 @@ function ThirdSection() {
                                 resume="Resume.pdf"
                                 description={
                                     <>
-                                        During the time in <b>PRISM</b>
+                                        During the time in <b>PRISM</b>{" "} 
                                         (PRofitability InSights Manager), I
                                         developed real-time rendering{" "}
                                         <b>data visualizations</b> to showcase
@@ -62,7 +62,7 @@ function ThirdSection() {
                                         During{" "}
                                         <strong>Smart Home Appliances</strong>{" "}
                                         project, I performed a data filter with{" "}
-                                        <b>pandas</b>,<b>R</b> and <b>SQL</b>.
+                                        <b>pandas</b>, <b>R</b> and <b>SQL</b>.
                                         in data processing. To identify the
                                         abnormal data on cloud server, I
                                         employed the <b>KNN</b> algorithm for
