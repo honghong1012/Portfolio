@@ -11,17 +11,18 @@ interface ImageProps {
 
 function CustomizedImage ({ imgId }: ImageProps) {
     return(
-        <>
-            {imgId === 'Portfolio' && (
-                <div>
-                    <img className="img-sizing" src={Portfolio}></img>
-                </div>
-            )}
+        <>  
             {imgId === 'AWS' && (
                 <div>
                     <img className="img-sizing" src={AWS}></img>
                 </div>
             )}
+            {imgId === 'Portfolio' && (
+                <div>
+                    <img className="img-sizing" src={Portfolio}></img>
+                </div>
+            )}
+            
             {imgId === 'smartHealth' && (
                 <div>
                     <img className="img-sizing" src={SmartHealth}></img>

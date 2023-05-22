@@ -139,8 +139,8 @@ a:hover{
 }
 
 .img-sizing{
-  width: 100%;
   height: 100%;
+  width: auto;
 }
 
 .about-title{

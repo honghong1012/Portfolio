@@ -1,11 +1,12 @@
 import Image from "next/image";
 // Assets
-import AboutGif from "public/SecondSection/About.gif";
+// import AboutGif from "public/SecondSection/About.gif";
+const AboutGif = "SecondSection/About.gif"
 
 function SecondSection() {
     return (
         <section
-            className="flex min-h-screen w-full items-center"
+            className="flex min-h-screen w-full items-center py-20"
             id="about"
         >
             <div className="mx-auto about-content-container">
@@ -16,12 +17,9 @@ function SecondSection() {
                 </div>
                 <div className=" mx-auto about-image-text-container max-w-7xl cursor-default items-center justify-between gap-5">
                     <div className="hide about-image-container">
-                        <Image
-                            src={AboutGif}
-                            width={800}
-                            height={600}
-                            alt="About Me Section"
-                        />
+                        <div>
+                            <img style={{width:"100%"}} src={AboutGif} alt="About Me Section gif"></img>
+                        </div>
                     </div>
                     <div className="hide delay about-text-container flex w-full flex-col gap-6 text-justify">
                         <p className="font-semibold text-black">
@@ -53,7 +51,7 @@ function SecondSection() {
                     <a
                         href="/moreAboutMe"
                         rel="noopener noreferrer"
-                        className="flex justify-center text-2xl rounded-lg border-2 border-primary-100 px-3 py-2 text-primary-100 hover:bg-primary-300 hover:text-white md:w-1/3"
+                        className="flex justify-center text-2xl rounded-lg border-2 border-primary-100 px-3 py-2 text-primary-100 hover:bg-primary-200 hover:border-primary-200 hover:text-white md:w-1/3"
                     >More about me...</a>
                 </div>
             </div>
